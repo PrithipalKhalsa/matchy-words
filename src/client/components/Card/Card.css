@@ -1,0 +1,18 @@
+.card-row {
+    display: flex;
+    /* width: 100%;
+    table-layout: fixed;
+    border-spacing: 10px;  */
+}
+.card-column {
+    display: table-cell;
+    width: 50%;
+    text-align: center;
+}
+ .card-column  h1{
+   cursor: pointer
+}
+.crown{
+  width :8%;
+  height:8%;
+}

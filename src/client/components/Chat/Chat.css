@@ -1,0 +1,170 @@
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .outerContainer {
+    height: 100%;
+  }
+
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 1200px) {
+  .container {
+    width: 60%;
+  }
+}
+
+body {
+  font: 22px "Century Gothic", sans-serif;
+  margin: 20px;
+}
+
+ol, ul {
+  padding-left: 30px;
+}
+
+p {
+  display: block;
+  margin-block-start: 0.7em;
+  margin-block-end: 0.7em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.status-info {
+  margin-left: 20px;
+  color: rgb(208,33,41);
+}
+
+.board {
+  display: flex;
+  flex-direction: row;
+  width: 16.5em;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  margin-left: auto;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: rgb(208,33,41);
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+
+
+
+.input-class{
+  margin-top: -0.1em;
+}
+
+.title-class {
+  font-size: 1.5rem;
+}
+
+.popup-class{
+  height: 165px;
+}
+
+.join-button-class {
+  margin: .3125em;
+  padding: .5em 1.8em;
+  margin-bottom: 1em;
+}
+
+.button-class {
+  background-color: '#7397AA';
+  margin: .3125em;
+  padding: .5em 1.8em;
+}
+
+
+.app-board {
+    width: 40%;
+    margin: auto;
+    min-width: 400px;
+    min-height: 200px;
+    background: #FCF7DE;
+    border-radius: 5px;
+
+}
+.app-board.instructions p {
+    padding: 10%;
+}
+.username-input{
+  width: 300px;
+  height: 100px;
+  display: grid;
+  margin: 10px;
+  margin: auto;
+  padding-top: 5%;
+}
+
+.game-input{
+  width: 300px;
+  height: 100px;
+  display: grid;
+  margin: 10px;
+  margin: auto;
+  padding-top: 5%;
+}
+
+.opening-form{
+  height: 160px;
+}
+
+.waiting-text{
+  text-align: center;
+  padding: .75em;
+}
+
+
+button.submit-word-button {
+    margin: 2% 0;
+    background-color: #C1BBDD;
+    font-size: 1em;
+}
+
+button.next-word-button {
+    margin: 2% 0;
+    background-color: #C1BBDD;
+    font-size: 1em;
+    float: right;
+}
+
+button.end-game-button {
+    margin: 2% 0;
+    background-color: #C1BBDD;
+    font-size: 1em;
+    float: left;
+}
+
+button.create-button {
+    margin: 2% 0;
+    background-color: #DABFDE;
+    font-size: 1em;
+}
+button.join-button{
+    margin: 2% 0;
+    background-color: #C1BBDD;
+    font-size: 1em;
+}
+
+input#playername-input, input#word-input {
+    font-size: 1em;
+
+}

@@ -1,0 +1,39 @@
+
+  .player-block h2 {
+     text-align: center;
+  }
+  .player-block{
+    min-width: 300px;
+    height: 100px;
+    display: grid;
+    margin: 10px;
+    margin: auto;
+  }
+  .winner{
+    border: #f5c71a solid;
+  }
+ .game-winner{
+    background-color: #f5c71a !important;
+  }
+  .sent{
+    border: blue solid;
+  }
+  .player-block h2 {
+     text-align: center;
+  }
+
+  .player-block-top {
+      display: inline;
+      font-size: 14pt;
+  }
+  .player-block-name {
+      float: left;
+  }
+  .player-block-top {
+      font-size: 14pt;
+      display: flex;
+      place-content: space-between;
+  }
+  .player-block-score {
+      float: right;
+  }
