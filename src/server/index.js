@@ -54,7 +54,7 @@ io.on('connect', (socket) => {
   socket.on('resetGame', () => {
     var user = getUser(socket.id);
     let allUsers=resetGame(user.room)
-    io.to(user.room).emit('newBoard', { room: user.room, users: allUsers ,roundWinner: false, endGame: false, resetSent:true });
+    io.to(user.room).emit('newBoard', { room: user.room, users: allUsers ,roundWinner: false, endGame: false });
   });
 
   socket.on('startTimer',(maxTime) => {

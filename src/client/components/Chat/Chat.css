@@ -66,8 +66,6 @@ p {
 }
 
 
-
-
 .input-class{
   margin-top: -0.1em;
 }
@@ -104,67 +102,4 @@ p {
 }
 .app-board.instructions p {
     padding: 10%;
-}
-.username-input{
-  width: 300px;
-  height: 100px;
-  display: grid;
-  margin: 10px;
-  margin: auto;
-  padding-top: 5%;
-}
-
-.game-input{
-  width: 300px;
-  height: 100px;
-  display: grid;
-  margin: 10px;
-  margin: auto;
-  padding-top: 5%;
-}
-
-.opening-form{
-  height: 160px;
-}
-
-.waiting-text{
-  text-align: center;
-  padding: .75em;
-}
-
-
-button.submit-word-button {
-    margin: 2% 0;
-    background-color: #C1BBDD;
-    font-size: 1em;
-}
-
-button.next-word-button {
-    margin: 2% 0;
-    background-color: #C1BBDD;
-    font-size: 1em;
-    float: right;
-}
-
-button.end-game-button {
-    margin: 2% 0;
-    background-color: #C1BBDD;
-    font-size: 1em;
-    float: left;
-}
-
-button.create-button {
-    margin: 2% 0;
-    background-color: #DABFDE;
-    font-size: 1em;
-}
-button.join-button{
-    margin: 2% 0;
-    background-color: #C1BBDD;
-    font-size: 1em;
-}
-
-input#playername-input, input#word-input {
-    font-size: 1em;
-
 }

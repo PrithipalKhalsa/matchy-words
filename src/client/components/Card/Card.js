@@ -10,7 +10,7 @@ const Card = ({ gameWinner,overRide,overRideMinus,overRidePlus,name,word,score,c
   }
   return (
     <div>
-   <img  value={(isGameWinner) ? "src/client/crown.png" :null }></img>
+
     <div key={name} className="card-row">
       {overRide &&<div className="card-column"><h1 onClick={()=>overRideMinus(name)} >{"\u2212"}</h1></div>}
       <div key={name} className={['player-block ' , (isRoundWinner) ? 'winner' : 'loser', (sent) ? 'sent' : 'unsent' ,(isGameWinner) ? 'game-winner' : 'game-loser'].join(' ')}

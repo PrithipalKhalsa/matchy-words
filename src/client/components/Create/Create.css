@@ -2,6 +2,7 @@ html, body {
   font-family: 'Roboto', sans-serif;
   padding: 0;
   margin: 0;
+  background-color: #f5fffa;
 }
 
 #root {html, body {
@@ -12,6 +13,7 @@ html, body {
 
 #root {
   height: 100vh;
+
 }
 
 * {
@@ -61,7 +63,7 @@ button:focus {
 .joinInput {
   border-radius: 0;
   padding: 15px 20px;
- 
+
 
 }
 

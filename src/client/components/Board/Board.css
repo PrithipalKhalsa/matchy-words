@@ -8,6 +8,7 @@
     display: grid;
     margin: 10px;
     margin: auto;
+    border-radius: 5px;
   }
   .winner{
     border: #f5c71a solid;
@@ -37,3 +38,30 @@
   .player-block-score {
       float: right;
   }
+
+  .over-ride-btn{
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: darkred;
+    display: inline-block;
+    border: none;
+    padding: 20px;
+    float: right;
+    border-radius: 5px;
+  }
+  .over-ride-btn:hover{
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background:red;
+    display: inline-block;
+    border: none;
+    padding: 20px;
+    float: right;
+    border-radius: 5px;
+  }
+  .subtitle {
+    display: flex;
+    place-content: space-between;
+}

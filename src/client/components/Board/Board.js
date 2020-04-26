@@ -29,7 +29,18 @@ const overRideMinus=(name)=>{
         users
           ? (
             <div>
-              <h1>Room ID: {room}</h1>
+            <h1 className="heading">Mind Meld</h1>
+            <div class="subtitle">
+              <h5>Room ID: {room}</h5>
+                {time=== ''&&
+                <div className="over-ride-block">
+                  {!overRide
+                    ?<button className="over-ride-btn" onClick={() => setOverRide(!overRide)}>OverRide</button>
+                    :null
+                  }
+              </div>
+              }
+            </div>
               <div className="app-board">
               {gameWinner&&<div>Winners:</div>}
                 {users.map(({name,word,score,color,isRoundWinner,isGameWinner}) =>
@@ -39,14 +50,7 @@ const overRideMinus=(name)=>{
                 <div>
                 </div>
               </div>
-              {time=== ''&&
-              <div className="over-ride-block">
-                {!overRide
-                  ?<button onClick={() => setOverRide(!overRide)}>Manual Over Ride</button>
-                  :null
-                }
-            </div>
-            }
+
             </div>
           )
           : null

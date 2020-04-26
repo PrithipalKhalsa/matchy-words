@@ -6,6 +6,7 @@ import Board from '../Board/Board';
 import Messages from '../Messages/Messages';
 import InfoBar from '../InfoBar/InfoBar';
 import Input from '../Input/Input';
+import Instructions from '../Instructions/Instructions';
 
 import './Chat.css';
 
@@ -24,8 +25,8 @@ const Chat = ({ location }) => {
   const [gameWinner, setGameWinner]=useState(false);
   const [hasSent,setHasSent]=useState([]);
 
-  const ENDPOINT = 'http://localhost:5000';
-
+  const ENDPOINT = 'https://matchywords2020.uc.r.appspot.com/';
+  // const ENDPOINT = 'http://localhost:5000/';
   useEffect(() => {
     const { name, room } = queryString.parse(location.search);
 
@@ -121,7 +122,7 @@ const Chat = ({ location }) => {
   // <InfoBar room={room} />
   // <Messages messages={messages} name={name} />
   return (
-
+<div>
     <div className="app-board">
       <Board gameWinner={gameWinner} time={time} socket={socket} users={users} hasSent={hasSent} room={room} sendMessage={sendMessage}/>
       <div>{time}</div>
@@ -141,6 +142,8 @@ const Chat = ({ location }) => {
 
          }</div>
         }
+    </div>
+    <Instructions room={room} wins={room.split("-")[0]} />
     </div>
   );
 }

@@ -28,7 +28,7 @@ export default function SignIn() {
       <div className="joinInnerContainer">
         <h1 className="heading">Join Room</h1>
         <div>
-          <input placeholder="Name" className="joinInput" type="text" onChange={(event) => setName(event.target.value)} />
+          <input maxLength="20" placeholder="Name" className="joinInput" type="text" onChange={(event) => setName(event.target.value)} />
         </div>
 
 
@@ -40,7 +40,7 @@ export default function SignIn() {
           </Link>
           <p className="error-msg">{errorMsg}</p>
 
-        
+
 
       </div>
     </div>

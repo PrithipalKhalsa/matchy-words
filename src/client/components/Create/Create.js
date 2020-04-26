@@ -8,9 +8,9 @@ import './Create.css';
 const Create=()=> {
   const [time, setTime] = useState(20);
   const [wins, setWins] = useState(5);
-  const [name, setName] = useState(5);
+  const [name, setName] = useState('');
   const [errorMsg, setErrorMsg] = useState('');
-  const defaultRoom=randomWords({exactly: 1,maxLength: 5})
+  const defaultRoom=randomWords({exactly: 1,maxLength: 7})
   let roomArr=[wins,defaultRoom,time].join('-')
 
   const createRoom =(e)=>{
@@ -25,7 +25,7 @@ const Create=()=> {
       <div className="joinInnerContainer">
         <h1 className="heading">Create Room</h1>
         <div>
-          <input placeholder="Name" className="joinInput" type="text" onChange={(event) => setName(event.target.value)} />
+          <input maxLength="20" placeholder="Name" className="joinInput" type="text" onChange={(event) => setName(event.target.value)} />
         </div>
       <div>
         <div className="create-options">
