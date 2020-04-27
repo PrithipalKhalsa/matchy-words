@@ -86,7 +86,7 @@ const Chat = ({ location }) => {
       console.log(users[0].wordsUsed)
       if(!users[0].wordsUsed.includes(message)){
         toggleInput(!input);
-        socket.emit('sendMessage', message, () => setMessage(''));
+        socket.emit('sendMessage', message.toLowerCase(), () => setMessage(''));
       }else{
         alert('that word has been used')
       }

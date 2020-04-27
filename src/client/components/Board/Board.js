@@ -29,7 +29,7 @@ const overRideMinus=(name)=>{
         users
           ? (
             <div>
-            <h1 className="heading">Mind Meld</h1>
+            <h1 className="heading">Mantchy Words</h1>
             <div class="subtitle">
               <h5>Room ID: {room}</h5>
                 {time=== ''&&
