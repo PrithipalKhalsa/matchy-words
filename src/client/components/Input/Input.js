@@ -7,7 +7,7 @@ const Input = ({ setMessage, sendMessage, message }) => (
     <input
       className="input"
       type="text"
-      placeholder="Type a message..."
+      placeholder="Type a word..."
       value={message}
       maxLength="20"
       onChange={({ target: { value } }) => setMessage(value)}

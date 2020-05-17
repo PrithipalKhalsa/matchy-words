@@ -125,7 +125,6 @@ const Chat = ({ location }) => {
 <div>
     <div className="app-board">
       <Board gameWinner={gameWinner} time={time} socket={socket} users={users} hasSent={hasSent} room={room} sendMessage={sendMessage}/>
-      <div>{time}</div>
           { input
           ?<Input  message={message} setMessage={setMessage} sendMessage={sendMessage} />
           :null
@@ -138,10 +137,10 @@ const Chat = ({ location }) => {
               }</div>
             :<div>{ (!input&&time=== '') &&
 
-              <button className="sendButton" onClick={e => startTimer(e)}>Start Timer</button>
-
+              <button className="sendButton startButton" onClick={e => startTimer(e)}>Start Timer</button>
          }</div>
         }
+        <p className="board">Input a word that relates to the words on the board. Don't repeat words in a round.</p>
     </div>
     <Instructions room={room} wins={room.split("-")[0]} />
     </div>

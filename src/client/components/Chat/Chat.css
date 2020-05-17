@@ -38,11 +38,6 @@ p {
   color: rgb(208,33,41);
 }
 
-.board {
-  display: flex;
-  flex-direction: row;
-  width: 16.5em;
-}
 
 .title {
   display: flex;

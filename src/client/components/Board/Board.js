@@ -3,6 +3,7 @@ import React, {useState,useEffect} from 'react';
 
 import './Board.css';
 import Card from '../Card/Card';
+import Timer from '../Timer/Timer';
 
 const Board = ({gameWinner, time, users ,hasSent,room,socket}) => {
   const [overRideNames,setOverRideNames]=useState([]);
@@ -24,13 +25,13 @@ const overRideMinus=(name)=>{
 }
 
   return (
-    <div className="Board">
+    <div className="board">
       {
         users
           ? (
             <div>
-            <h1 className="heading">Mantchy Words</h1>
-            <div class="subtitle">
+            <h1 className="heading">Matchy Words</h1>
+            <div className="subtitle">
               <h5>Room ID: {room}</h5>
                 {time=== ''&&
                 <div className="over-ride-block">
@@ -40,8 +41,10 @@ const overRideMinus=(name)=>{
                   }
               </div>
               }
+                {time != ''&&
+              <Timer time={time}/>}
             </div>
-              <div className="app-board">
+              <div>
               {gameWinner&&<div>Winners:</div>}
                 {users.map(({name,word,score,color,isRoundWinner,isGameWinner}) =>
                    <div key={name}><Card overRide={overRide} gameWinner={gameWinner} overRideMinus={overRideMinus} overRidePlus={overRidePlus}

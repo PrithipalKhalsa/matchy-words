@@ -58,7 +58,9 @@ button:focus {
   min-width: 400px;
   min-height: 250px;
   background: #FCF7DE;
-  border-radius: 5px;}
+  border-radius: 5px;
+  padding: 1%;
+}
 
 .joinInput {
   border-radius: 0;
