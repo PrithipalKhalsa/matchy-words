@@ -65,6 +65,11 @@
   .subtitle {
     display: flex;
     place-content: space-between;
+    background: #fafafa;
+    border: solid 1px #dbdbdb;
+    border-radius: 3px;
+    padding: 8px;
+    margin: 8px;
 }
 .board {
     padding: 5%;
@@ -74,5 +79,5 @@ margin-top:0;
 }
 .roominfo {
     place-content: space-between;
-    font-size: smaller;
-}
+    font-size: initial;
+  }
