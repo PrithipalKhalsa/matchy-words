@@ -57,7 +57,6 @@ const Report = () => {
 
   return (
    <div className="report-component">
-    <button className="show-form-button" onClick={()=>setShowForm(!showForm)}>Report Bug</button>
     {showForm &&
       <div className={["contact-form",(showForm) ? 'animate__bounce' : null].join(' ')}>
         <div className="form-group">
@@ -76,6 +75,8 @@ const Report = () => {
         <p className="error-msg">{error}</p>
     </div>
     }
+    <button className="show-form-button" onClick={()=>setShowForm(!showForm)}>Report Bug</button>
+
   </div>
   );
 }

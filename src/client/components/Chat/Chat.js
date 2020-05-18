@@ -143,8 +143,9 @@ const Chat = ({ location }) => {
         }
         <p className="board">Input a word that relates to the words on the board. Don't repeat words in a round.</p>
     </div>
-    <Report/>
     <Instructions room={room} wins={room.split("-")[0]} />
+    <Report/>
+
     </div>
   );
 }
