@@ -8,7 +8,7 @@ const Instructions = ({room, wins}) => {
 
 
   return (
-    <div className="board">
+    <div>
       <div className="instruct how-to-play">
         <h2>How to play:</h2>
         <p>1. Share this room id ({room}) with your friends</p>

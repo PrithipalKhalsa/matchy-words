@@ -22,11 +22,18 @@ export default function SignIn() {
     }
   }
   return (
+    <div>
+    <div className="site-title">
+    <h1>Matchy Words</h1>
+      <div className="site-subtitle">a word matchy game</div>
+    </div>
     <div className="joinOuterContainer">
+
     <Create/>
 
       <div className="joinInnerContainer">
         <h1 className="heading">Join Room</h1>
+        <div>Join a game that your friend made</div>
         <div>
           <input maxLength="20" placeholder="Name" className="joinInput" type="text" onChange={(event) => setName(event.target.value)} />
         </div>
@@ -43,6 +50,7 @@ export default function SignIn() {
 
 
       </div>
+    </div>
     </div>
   );
 }

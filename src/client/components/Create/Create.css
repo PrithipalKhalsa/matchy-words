@@ -109,7 +109,6 @@ button:focus {
 }
 .create-options{
   border-radius: 0;
-  padding: 15px 20px;
   margin:auto;
   text:unset;
   font-size: small;

@@ -32,7 +32,10 @@ const overRideMinus=(name)=>{
             <div>
             <h1 className="heading">Matchy Words</h1>
             <div className="subtitle">
-              <h5>Room ID: {room}</h5>
+              <div className="roominfo">
+                <p>Room ID: {room}</p>
+                <p>Points to win: {room.split("-")[0]}</p>
+              </div>
                 {time=== ''&&
                 <div className="over-ride-block">
                   {!overRide

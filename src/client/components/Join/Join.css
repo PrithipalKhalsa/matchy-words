@@ -31,3 +31,10 @@ html, body {
 button:focus {
   outline: 0;
 }
+
+.site-title{
+  text-align : center;
+}
+.site-title h1{
+  color: rgb(208,33,41);
+}

@@ -69,3 +69,10 @@
 .board {
     padding: 5%;
 }
+.roominfo p{
+margin-top:0;
+}
+.roominfo {
+    place-content: space-between;
+    font-size: smaller;
+}
