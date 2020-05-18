@@ -1,0 +1,48 @@
+.contact-form{
+  min-width: 200px;
+  border-radius: 5px;
+  border: solid grey .1px;
+}
+.contact-form textarea{
+  width :400px;
+}
+.contact-form label{
+  min-width :100px;
+}
+.contact-form .form-group {
+    display: flex;
+    margin:8px
+}
+.send-report-button {
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #C1BBDD;
+    padding: 10px;
+    display: inline-block;
+    border: none;
+    width: 20%;
+    border-radius: 5px;
+    margin: 8px;
+}
+.send-report-button:hover {
+  background: #DABFDE;
+}
+
+.show-form-button{
+  color: #fff !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: darkred;
+  display: inline-block;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+.show-form-button:hover{
+  background:red;
+}
+
+.report-component{
+  margin: 0 25%;
+}

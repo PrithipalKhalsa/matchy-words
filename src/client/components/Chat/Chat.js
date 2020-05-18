@@ -7,6 +7,7 @@ import Messages from '../Messages/Messages';
 import InfoBar from '../InfoBar/InfoBar';
 import Input from '../Input/Input';
 import Instructions from '../Instructions/Instructions';
+import Report from '../Report/Report';
 
 import './Chat.css';
 
@@ -142,6 +143,7 @@ const Chat = ({ location }) => {
         }
         <p className="board">Input a word that relates to the words on the board. Don't repeat words in a round.</p>
     </div>
+    <Report/>
     <Instructions room={room} wins={room.split("-")[0]} />
     </div>
   );
