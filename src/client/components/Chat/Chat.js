@@ -26,8 +26,8 @@ const Chat = ({ location }) => {
   const [gameWinner, setGameWinner]=useState(false);
   const [hasSent,setHasSent]=useState([]);
 
-  // const ENDPOINT = 'https://matchywords2020.uc.r.appspot.com/';
-  const ENDPOINT = 'http://localhost:5000/';
+  const ENDPOINT = 'https://matchywords2020.uc.r.appspot.com/';
+  // const ENDPOINT = 'http://localhost:5000/';
   useEffect(() => {
     const { name, room } = queryString.parse(location.search);
 
