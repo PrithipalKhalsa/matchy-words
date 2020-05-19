@@ -5,8 +5,7 @@ const creds = require('./config');
 const bodyParser = require('body-parser');
 
 var jsonParser = bodyParser.json()
-console.log(creds.USER)
-console.log(creds.PASS)
+
 
 var transport = {
   host: 'smtp.gmail.com',
