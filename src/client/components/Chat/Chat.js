@@ -26,8 +26,8 @@ const Chat = ({ location }) => {
   const [gameWinner, setGameWinner]=useState(false);
   const [hasSent,setHasSent]=useState([]);
 
-  const ENDPOINT = 'https://matchywords2020.uc.r.appspot.com/';
-  // const ENDPOINT = 'http://localhost:5000/';
+  // const ENDPOINT = 'https://matchywords2020.uc.r.appspot.com/';
+  const ENDPOINT = 'http://localhost:5000/';
   useEffect(() => {
     const { name, room } = queryString.parse(location.search);
 
@@ -47,12 +47,10 @@ const Chat = ({ location }) => {
   useEffect(() => {
     socket.on("newBoard", ({ users,input,roundWinner,endGame,resetSent }) => {
       setUsers(users);
-      console.log(users)
       if(roundWinner !== undefined){
       setRoundWinner(roundWinner)
       setHasSent([])
       setGameWinner(endGame)
-      console.log("gamewinner "+endGame);
 
       }
       if(resetSent !== undefined){
@@ -84,7 +82,6 @@ const Chat = ({ location }) => {
   const sendMessage = (event) => {
     event.preventDefault();
     if(message) {
-      console.log(users[0].wordsUsed)
       if(!users[0].wordsUsed.includes(message)){
         toggleInput(!input);
         socket.emit('sendMessage', message.toLowerCase(), () => setMessage(''));
@@ -95,19 +92,12 @@ const Chat = ({ location }) => {
   }
 
   const startTimer = (event) => {
-    console.log("max: "+maxTime);
 
-    console.log("button");
      event.preventDefault();
       socket.emit('startTimer',maxTime);
 
   }
-  const addUserSent=(user)=>{
-    // let i= users.findIndex((userI) => user===userI.name)
-    // users[i].hasSent=true
-    console.log(user)
-    console.log(users[0].wordsUsed)
-  }
+
 
   const resetRound = (event) => {
     event.preventDefault();

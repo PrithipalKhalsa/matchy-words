@@ -59,8 +59,9 @@ io.on('connect', (socket) => {
 
   socket.on('startTimer',(maxTime) => {
     const timeSetter = getUser(socket.id);
-    let counter=maxTime
+    let counter=maxTime-1
     io.to(timeSetter.room).emit('toggleInput',{input:true });
+    io.to(timeSetter.room).emit('timer', { time: maxTime})
     var interval = setInterval(() => {
       counter--;
       if(counter < 0 ){
