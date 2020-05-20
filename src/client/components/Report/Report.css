@@ -38,11 +38,13 @@
   border: none;
   padding: 10px;
   border-radius: 5px;
+  margin: 5%;
+
 }
 .show-form-button:hover{
+  margin: 5%;
   background:red;
 }
 
 .report-component{
-  margin: 0 25%;
 }

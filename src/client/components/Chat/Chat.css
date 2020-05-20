@@ -16,6 +16,22 @@
   }
 }
 
+@media (min-width: 320px) and (max-width: 980px) {
+  .web-page {
+    display: unset;
+  }
+
+}
+
+@media (min-width: 980px) {
+  .web-page {
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+}
+
 body {
   font: 22px "Century Gothic", sans-serif;
   margin: 20px;
@@ -90,6 +106,7 @@ p {
     width: 40%;
     margin: auto;
     min-width: 400px;
+    max-width: 500px;
     min-height: 200px;
     background: #fff;
     border-radius: 5px;

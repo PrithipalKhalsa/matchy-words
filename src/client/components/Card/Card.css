@@ -13,12 +13,14 @@
    cursor: pointer
 }
 .crown{
-  width :8%;
-  height:8%;
+    height: 20px;
 }
 
 .wordholder{
-  display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.winner-status{
+      text-align-last: center;
 }

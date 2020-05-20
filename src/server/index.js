@@ -38,6 +38,7 @@ io.on('connect', (socket) => {
 
       io.to(user.room).emit('newBoard', { room: user.room, users: getUsersInRoom(user.room),input:false,roundWinner: true, endGame: endGame, resetSent:true });
     });
+    
     socket.on('overRideMinus', name => {
       var user = getUser(socket.id);
       let endGame=overRideMinus(name,user.room)

@@ -1,16 +1,11 @@
 .instruct {
+
     width: 50%;
     margin: auto;
-    min-width: 400px;
+    min-width: 300px;
     font-size: smaller;
 }
 
-.how-to-play {
-
-}
-.other-rules {
-
-}
-.colors-block {
-
+.instruction-wrapper {
+    margin: 5%;
 }

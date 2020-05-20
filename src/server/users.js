@@ -1,5 +1,5 @@
 var randomWords = require('random-words');
-const colors = ["#B5EAD7","#FFB7B2","#FFDAC1","#E2F0CB","#CDAB81","#C17E9B","#D8D7B9","#87B191","#7397AA","#6E6B9F","#6a89cc","#b8e994","#f6b93b","#38ada9","#fa983a","#3c6382","#4a69bd","#e55039","#fa983a","#fad390","#e58e26","#b71540","#eb2f06"];
+const colors = ["#B5EAD7","#FFB7B2","#FFDAC1","#E2F0CB","#CDAB81","#C17E9B","#D8D7B9","#87B191","#7397AA","#6a89cc","#b8e994","#38ada9","#fa983a","#3c6382","#4a69bd","#e55039","#fa983a","#fad390","#e58e26","#b71540","#eb2f06"];
 const users = [];
 
 const addUser = ({ id, name, room }) => {

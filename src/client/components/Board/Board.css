@@ -1,7 +1,7 @@
 
   .player-block h2 {
      text-align: center;
-     margin-top: 4%;
+     margin: 0;
   }
   .player-block{
     min-width: 300px;
@@ -20,9 +20,6 @@
   }
   .sent{
     border: blue solid;
-  }
-  .player-block h2 {
-     text-align: center;
   }
 
   .player-block-name {

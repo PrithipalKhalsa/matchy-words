@@ -21,6 +21,14 @@ const Card = ({ gameWinner,overRide,overRideMinus,overRidePlus,name,word,score,c
         </div>
           <div className="wordholder">
             <h2 className={(isRoundWinner) ? 'animate__heartBeat' :null}>{word}</h2>
+            <div className = "winner-status">{
+                (isRoundWinner)
+                  ? ( (isGameWinner)
+                    ? <img className="crown" src={require("./crown.png")}></img>
+                    : 'round winner'
+                    )
+                  : null }</div>
+
           </div>
           <div>
 
